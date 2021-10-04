@@ -30,7 +30,7 @@ public class ServidorSocket {
 				
 					String[] msg = texto.split(" ");
 				
-				new Thread(new ThreadSocket(Integer.parseInt(msg[1]), msg[2])).start();
+				new Thread(new ThreadSocket(Integer.parseInt(msg[1]), msg[2], msg[3])).start();
 			
 			} while (!"sair".equals(entrada.toString()));
 			
